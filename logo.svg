@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- ring with gap at bottom -->
+  <path d="M 67.88 123.87 A 56 56 0 1 1 132.12 123.87"
+        fill="none" stroke="#111" stroke-width="13" stroke-linecap="round"/>
+  <!-- center dot -->
+  <circle cx="100" cy="78" r="13" fill="#111"/>
+  <!-- right petal -->
+  <path d="M 132.12 123.87
+           C 150 140, 148 168, 100 190
+           C 102 165, 103 140, 100 116
+           C 112 118, 124 118, 132.12 123.87 Z"
+        fill="#111"/>
+  <!-- left petal -->
+  <path d="M 67.88 123.87
+           C 50 140, 52 168, 100 190
+           C 98 165, 97 140, 100 116
+           C 88 118, 76 118, 67.88 123.87 Z"
+        fill="#111"/>
+</svg>

@@ -1,19 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- ring with gap at bottom -->
-  <path d="M 67.88 123.87 A 56 56 0 1 1 132.12 123.87"
-        fill="none" stroke="#111" stroke-width="13" stroke-linecap="round"/>
-  <!-- center dot -->
-  <circle cx="100" cy="78" r="13" fill="#111"/>
-  <!-- right petal -->
-  <path d="M 132.12 123.87
-           C 150 140, 148 168, 100 190
-           C 102 165, 103 140, 100 116
-           C 112 118, 124 118, 132.12 123.87 Z"
-        fill="#111"/>
-  <!-- left petal -->
-  <path d="M 67.88 123.87
-           C 50 140, 52 168, 100 190
-           C 98 165, 97 140, 100 116
-           C 88 118, 76 118, 67.88 123.87 Z"
-        fill="#111"/>
+  <defs>
+    <linearGradient id="shimmer" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#2e2158"/>
+      <stop offset="45%" stop-color="#4a3b8c"/>
+      <stop offset="100%" stop-color="#241a44"/>
+    </linearGradient>
+    <linearGradient id="highlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b9a9f2"/>
+      <stop offset="55%" stop-color="#8f7fe0"/>
+      <stop offset="100%" stop-color="#6b5bc4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- top yoke bar -->
+  <rect x="76" y="32" width="48" height="16" rx="2" fill="#241a44"/>
+
+  <!-- right wing body -->
+  <path d="M 106 40 L 146 40 C 160 40, 170 44, 176 54 C 182 64, 182 80, 180 96
+           C 177 128, 164 160, 134 184 C 124 192, 112 192, 108 180 L 106 70 Z"
+        fill="url(#shimmer)"/>
+  <!-- right wing feather stripes -->
+  <path d="M 112 46 L 120 46 L 118 178 C 114 177, 111 174, 110 170 Z" fill="url(#highlight)" opacity="0.9"/>
+  <path d="M 128 42 L 136 42 L 130 170 C 127 168, 125 164, 124 160 Z" fill="url(#highlight)" opacity="0.55"/>
+  <path d="M 148 44 C 156 48, 161 56, 163 66 L 150 110 C 148 100, 147 70, 148 44 Z" fill="url(#highlight)" opacity="0.3"/>
+
+  <!-- left wing body (mirror) -->
+  <path d="M 94 40 L 54 40 C 40 40, 30 44, 24 54 C 18 64, 18 80, 20 96
+           C 23 128, 36 160, 66 184 C 76 192, 88 192, 92 180 L 94 70 Z"
+        fill="url(#shimmer)"/>
+  <!-- left wing feather stripes (mirror) -->
+  <path d="M 88 46 L 80 46 L 82 178 C 86 177, 89 174, 90 170 Z" fill="url(#highlight)" opacity="0.9"/>
+  <path d="M 72 42 L 64 42 L 70 170 C 73 168, 75 164, 76 160 Z" fill="url(#highlight)" opacity="0.55"/>
+  <path d="M 52 44 C 44 48, 39 56, 37 66 L 50 110 C 52 100, 53 70, 52 44 Z" fill="url(#highlight)" opacity="0.3"/>
 </svg>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nabi -- Asistente de voz para back-office</title>
+<style>
+  body { font-family: -apple-system, system-ui, Segoe UI, Arial, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.5rem; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.8rem; }
+  a { color: #1a5fb4; }
+  footer { margin-top: 3rem; font-size: 0.9rem; color: #555; border-top: 1px solid #ddd; padding-top: 1rem; }
+</style>
+</head>
+<body>
+  <h1>Nabi</h1>
+  <p><strong>Asistente de voz para tareas de back-office</strong> -- consulta y actualiza pedidos en una hoja de cálculo, busca y crea contactos, y redacta correos, todo por voz.</p>
+
+  <h2>Qué hace Nabi</h2>
+  <ul>
+    <li>Consulta el estado de un pedido en Google Sheets por voz.</li>
+    <li>Actualiza el estado de un pedido (con confirmación hablada explícita antes de escribir).</li>
+    <li>Busca un contacto por nombre en Google Contacts para redactar un correo.</li>
+    <li>Crea un contacto nuevo en Google Contacts cuando no existe.</li>
+  </ul>
+
+  <h2>Cómo accede a tus datos de Google</h2>
+  <p>Nabi corre como una aplicación de escritorio instalada localmente en tu computadora -- no hay un servidor central que reciba o almacene tus datos. Cuando autorizás a Nabi a acceder a tu cuenta de Google:</p>
+  <ul>
+    <li>Usa el flujo estándar de OAuth 2.0 de Google (el mismo que usás para "Iniciar sesión con Google" en cualquier otra app).</li>
+    <li>El token de acceso queda cifrado en tu propia máquina (Windows DPAPI), nunca se envía a nosotros.</li>
+    <li>Solo pide los permisos mínimos necesarios: leer/escribir hojas de cálculo específicas (Google Sheets) y leer/crear contactos (Google Contacts).</li>
+  </ul>
+  <p>Ver el detalle completo en la <a href="./privacy.html">Política de Privacidad</a>.</p>
+
+  <footer>
+    Contacto: <a href="mailto:josuedirecto@gmail.com">josuedirecto@gmail.com</a><br>
+    <a href="./privacy.html">Política de Privacidad</a>
+  </footer>
+</body>
+</html>
